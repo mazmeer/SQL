@@ -60,8 +60,15 @@ from station;
 
 --https://www.hackerrank.com/challenges/weather-observation-station-5/problem?isFullScreen=true
 
-select city,length(city) from station order By length(city) asc, city asc limit 1;
-select distinct(City),length(city) from station order by length(city) desc, city asc limit 1;
+select city,length(city) 
+from station 
+order By length(city) asc, city asc 
+limit 1;
+
+select distinct(City),length(city) 
+from station 
+order by length(city) desc, city asc 
+limit 1;
 
 --https://www.hackerrank.com/challenges/weather-observation-station-6/problem?isFullScreen=true
 
@@ -145,7 +152,7 @@ order By employee_id;
 
 --https://www.hackerrank.com/challenges/the-pads/problem?isFullScreen=true
 
-select concat(name,'(',substring(Occupation,1,1),')') as Name 
+select concat(name,'(',substring(Occupation,1,1),')') AS Name 
 from occupations 
 order by Name;
 Select concat ('There are a total of ', count(occupation),' ', lower(occupation),'s.') AS totals
