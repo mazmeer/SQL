@@ -159,3 +159,5 @@ Select concat ('There are a total of ', count(occupation),' ', lower(occupation)
 from occupations
 group by occupation
 order by totals
+
+--
